@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="decor.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Bitcount+Prop+Single:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id = "calculator">
+        <input id="display" value="CALCULATOR" readonly>
+        <div id="keys">
+            <button onclick="appendtodisp('+')" class="operator">+</button>
+            <button onclick="appendtodisp('7')">7</button>
+            <button onclick="appendtodisp('8')">8</button>
+            <button onclick="appendtodisp('9')">9</button>
+            <button onclick="appendtodisp('-')"class="operator">-</button>
+            
+            <button onclick="appendtodisp('4')">4</button>
+            <button onclick="appendtodisp('5')">5</button>
+            <button onclick="appendtodisp('6')">6</button>
+            <button onclick="appendtodisp('*')"class="operator">*</button>
+            <button onclick="appendtodisp('1')">1</button>
+            <button onclick="appendtodisp('2')">2</button>
+            <button onclick="appendtodisp('3')">3</button>
+            <button onclick="appendtodisp('/')"class="operator">/</button>
+            <button onclick="appendtodisp('0')">0</button>
+            <button onclick="appendtodisp('.')">.</button>
+            <button onclick="calculate()"class="operatorspec">=</button>
+            <button onclick="cleardisplay()"class="operator">AC</button>
+            <button onclick="backspace()" class="bk">&larr;</button>
+           
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
